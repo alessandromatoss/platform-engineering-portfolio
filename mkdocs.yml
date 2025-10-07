@@ -1,0 +1,49 @@
+# Configuração básica do seu site
+site_name: Meu Portfólio de Engenharia
+
+# Define a estrutura de navegação do seu site.
+# A indentação representa a hierarquia de menu.
+nav:
+  # Item de nível superior para a página inicial
+  - 'Página Inicial, Sobre Mim': index.md
+  
+  # Item de nível superior para a seção "Core Platform Engineering"
+  - '1. Core Platform Engineering':
+    - 'Linux Performance Tuning':
+      - '1. Metodologia Diagnóstico Avançado': 1_core_platform_engineering/linux-performance-tuning/1-metodologia-diagnostico-avancado.md
+      - '2. Kernel Network Stack Tuning': 1_core_platform_engineering/linux-performance-tuning/2-kernel-network-stack-tuning.md
+      - '3. IO Memory Pressure Triage': 1_core_platform_engineering/linux-performance-tuning/3-io-memory-pressure-triage.md
+    - 'Linux Hardening e IAC':
+      - '1. Definição Baseline CIS': 1_core_platform_engineering/linux-hardening-iac/1-definicao-baseline-cis.md
+      - '2. Automação Hardening Ansible': 1_core_platform_engineering/linux-hardening-iac/2-automacao-hardening-ansible.md
+      - '3. IAC Security Governance': 1_core_platform_engineering/linux-hardening-iac/3-iac-security-governance.md
+  
+  # Item de nível superior para a seção "Observability Resilience"
+  - '2. Observability & Resilience':
+    - 'Metrics e FinOps':
+      - '1. Desafio e Arquitetura': 2_observability_resilience/metrics-finops/1-desafio-e-arquitetura.md
+      - '4. SLO e Alerta Inteligente': 2_observability_resilience/metrics-finops/4-slo-e-alerta-inteligente.md
+    - 'Logging e MTTR':
+      - '2. Pipelines Normalização': 2_observability_resilience/logging-mttr/2-pipelines-normalizacao.md
+      - '3. Dashboards Causa Raiz': 2_observability_resilience/logging-mttr/3-dashboards-causa-raiz.md
+
+  # Item de nível superior para a seção "AWS Architecture HA"
+  - '3. AWS Architecture HA':
+    - 'VPC Design Sênior':
+      - '1. VPC Subnets HA': 3_aws_architecture_ha/vpc-design-senior/1-vpc-subnets-ha.md
+      - '2. Roteamento NAT Gateway': 3_aws_architecture_ha/vpc-design-senior/2-roteamento-nat-gateway.md
+    - 'Data DR e FinOps':
+      - '3. Estratégias RTO, RPO e DR': 3_aws_architecture_ha/data-dr-finops/3-estrategias-rto-rpo-e-dr.md
+  
+  # Item de nível superior para a seção "Liderança e Processo"
+  - '4. Liderança e Processo':
+    - '1. Definindo Quadro Kanban': 4_lideranca_processo/1-definindo-quadro-kanban.md
+    - '2. Quantificando Dívida Técnica': 4_lideranca_processo/2-quantificando-divida-tecnica.md
+    - '3. Medindo Toil e FinOps': 4_lideranca_processo/3-medindo-toil-finops.md
+  
+  # Item de nível superior para a seção "Kubernetes IAC"
+  - '5. Kubernetes IAC':
+    - '1. Core Concepts Services Pods': 5_kubernetes_iac/1-core-concepts-services-pods.md
+    - '3. IAC Provisioning EKS': 5_kubernetes_iac/3-iac-provisioning-eks.md
+
+
